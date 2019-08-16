@@ -1,0 +1,264 @@
+@import url(../icons/icons.css);
+@import url(../fonts/fonts.css);
+body {
+  margin: 0;
+  padding: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+
+.container {
+  max-width: 966px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.datepicker--nav-title {
+  color: #333;
+  font-family: "helvetica";
+  font-weight: 600;
+  font-size: 14px; }
+
+.datepicker--day-name {
+  color: #333;
+  font-family: "helvetica";
+  font-weight: 600;
+  font-size: 14px; }
+
+.datepicker--cell.-selected- {
+  color: #fff;
+  background: #4090db; }
+  .datepicker--cell.-selected-:hover {
+    background: #4090db; }
+
+.datepicker--nav-title {
+  font-family: "helvetica";
+  font-size: 14px;
+  font-weight: 600; }
+
+.datepicker--cell-year {
+  font-family: "helvetica";
+  font-size: 14px;
+  font-weight: 600; }
+
+.datepicker--cell-month {
+  font-family: "helvetica";
+  font-size: 14px;
+  font-weight: 600; }
+
+.datepicker--cells {
+  font-family: "helvetica";
+  font-weight: 400;
+  font-size: 14px;
+  outline: none; }
+
+.header-hold {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 20px; }
+  .header-hold .input-hold {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; }
+    .header-hold .input-hold input {
+      border: 1px solid #cccccc;
+      padding: 7px 5px;
+      border-radius: 5px;
+      outline: none; }
+    .header-hold .input-hold:after {
+      content: "\e903";
+      font-family: "icomoon";
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+  .header-hold .date {
+    font-family: "Tahoma";
+    font-size: 17px;
+    display: inline-block;
+    vertical-align: middle; }
+  .header-hold .project-hold {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 20px; }
+    .header-hold .project-hold .project-name {
+      display: inline-block;
+      vertical-align: middle;
+      color: #262626;
+      font-size: 35px;
+      font-family: "MyiradPro";
+      font-weight: 400; }
+    .header-hold .project-hold .date-start {
+      display: inline-block;
+      vertical-align: middle;
+      border: 1px solid #4090db;
+      border-radius: 5px;
+      padding: 5px;
+      color: #4090db;
+      font-family: "helvetica";
+      font-size: 15px;
+      font-weight: 400; }
+  .header-hold .social-info {
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 0;
+    font-family: "proxima_nova"; }
+    .header-hold .social-info .number {
+      font-weight: 700; }
+    .header-hold .social-info li {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 17px;
+      margin-right: 25px;
+      font-weight: 400;
+      color: #3d4044; }
+
+.main {
+  background: #fafafa;
+  padding: 70px 0; }
+  .main .box-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 20px; }
+  .main .box-hold {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 1px;
+    overflow: hidden;
+    max-height: 292px; }
+    .main .box-hold:hover .hover-text {
+      opacity: 1;
+      visibility: visible; }
+    .main .box-hold img {
+      width: 100%;
+      height: 100%; }
+    .main .box-hold .quantity {
+      font-family: "proxima_nova";
+      font-weight: 600;
+      margin: 0 5px; }
+    .main .box-hold .hover-text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: #fff;
+      width: 100%;
+      height: 100%;
+      font-family: "proxima_nova";
+      font-weight: 600;
+      font-size: 17px;
+      -webkit-transition: all .5s ease-in-out;
+      -o-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+      background: rgba(21, 21, 21, 0.5);
+      opacity: 0;
+      visibility: hidden; }
+      .main .box-hold .hover-text .icon-wrapp {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-left: 20px;
+        position: absolute;
+        bottom: 40px;
+        left: 0; }
+        .main .box-hold .hover-text .icon-wrapp .icon-hold {
+          width: 33.3%;
+          margin-bottom: 20px;
+          font-family: "proxima_nova";
+          font-weight: 600; }
+      .main .box-hold .hover-text .text {
+        font-family: "proxima_nova";
+        font-weight: 600; }
+      .main .box-hold .hover-text p {
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        bottom: 10px;
+        left: 0; }
+    .main .box-hold .img-video {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      font-size: 20px;
+      color: #b9b9b9; }
+  .main .btn-hold {
+    text-align: center; }
+    .main .btn-hold a {
+      display: inline-block;
+      vertical-align: top;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: "proxima_nova";
+      font-size: 12px;
+      font-weight: 400;
+      color: #000;
+      border: 1px solid #000;
+      border-radius: 15px;
+      padding: 7px 35px;
+      -webkit-transition: all .5s ease-in-out;
+      -o-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out; }
+      .main .btn-hold a:hover {
+        background: #000;
+        color: #fff; }
