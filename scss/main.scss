@@ -99,6 +99,13 @@ p {
     outline: none;
 }
 
+
+.logo-hold{
+    a {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
 .header-hold {
     display: flex;
     flex-flow: row wrap;
@@ -291,6 +298,10 @@ p {
             top: 10px;
             font-size: 20px;
             color: #b9b9b9;
+            z-index: 99;
+            i{
+                font-size: 25px;
+            }
         }
     }
 

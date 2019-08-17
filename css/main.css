@@ -67,6 +67,10 @@ p {
   font-size: 14px;
   outline: none; }
 
+.logo-hold a {
+  display: inline-block;
+  vertical-align: top; }
+
 .header-hold {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,7 +245,10 @@ p {
       right: 10px;
       top: 10px;
       font-size: 20px;
-      color: #b9b9b9; }
+      color: #b9b9b9;
+      z-index: 99; }
+      .main .box-hold .img-video i {
+        font-size: 25px; }
   .main .btn-hold {
     text-align: center; }
     .main .btn-hold a {
